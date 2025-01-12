@@ -5,7 +5,7 @@
   "semi": false,
   "singleQuote": true,
   "arrowParens": "always",
-  "tailwindFunctions": ["clsx, classNames"],
+  "tailwindFunctions": ["clsx, classNames", "cva"],
   "plugins": [
     "prettier-plugin-organize-imports",
     "prettier-plugin-css-order",

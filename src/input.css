@@ -12,7 +12,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
+body,
+#root {
   min-width: 100vw;
   min-height: 100vh;
 }
