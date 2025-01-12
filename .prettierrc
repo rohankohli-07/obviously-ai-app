@@ -4,5 +4,11 @@
   "tabWidth": 2,
   "semi": false,
   "singleQuote": true,
-  "arrowParens": "always"
+  "arrowParens": "always",
+  "tailwindFunctions": ["clsx, classNames"],
+  "plugins": [
+    "prettier-plugin-organize-imports",
+    "prettier-plugin-css-order",
+    "prettier-plugin-tailwindcss"
+  ]
 }

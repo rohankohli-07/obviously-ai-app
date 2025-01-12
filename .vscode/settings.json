@@ -1,5 +1,7 @@
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
-  "editor.formatOnPaste": true
+  "css.lint.unknownProperties": "warning",
+  "css.lint.unknownAtRules": "ignore"
 }
