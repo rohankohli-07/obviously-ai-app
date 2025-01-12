@@ -75,7 +75,6 @@ export function Home() {
     })
   }, [filter])
 
-  const changeAll = () => {}
   return (
     <div className="h-screen w-screen">
       <h1 className="m-16">Home Page</h1>
