@@ -104,7 +104,10 @@ const SignUp = () => (
 )
 
 const Copyright = () => (
-  <Text className="text-obviously-black-500 mb-8 ms-8 text-sm" weight="normal">
+  <Text
+    className="text-obviously-black-500 mb-8 ms-0 text-center text-sm md:ms-8 md:text-start"
+    weight="normal"
+  >
     © Copyrights 2025 by Obviously AI, Inc. All rights reserved.
   </Text>
 )
@@ -117,7 +120,7 @@ export function SignIn() {
         className="ms-8 mt-8 w-[132px]"
         alt="Obviously AI Logo"
       />
-      <div className="flex w-[460px] flex-col gap-8 self-center">
+      <div className="flex w-screen flex-col gap-8 self-center px-2 md:w-[460px]">
         <Header />
         <SignInCard />
         <SignUp />

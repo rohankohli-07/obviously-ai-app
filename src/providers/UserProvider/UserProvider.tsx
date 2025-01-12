@@ -1,12 +1,7 @@
 import type { User } from '@/models/types'
 import { TokenResponse as GoogleToken } from '@react-oauth/google'
-import {
-  createContext,
-  PropsWithChildren,
-  useContext,
-  useEffect,
-  useState,
-} from 'react'
+import { createContext, useContext, useEffect, useState } from 'react'
+import { Outlet } from 'react-router'
 
 import { storage } from '@/lib/storage'
 
@@ -19,7 +14,7 @@ type UserContext = {
 
 const UserContext = createContext<UserContext | null>(null)
 
-export function UserProvider({ children }: PropsWithChildren) {
+export function UserProvider() {
   const navigate = useNavigate()
   const [value, setValue] = useState<UserContext | null>(null)
 
@@ -29,17 +24,13 @@ export function UserProvider({ children }: PropsWithChildren) {
 
     try {
       googleToken = storage.getGoogleToken()
-      console.log(googleToken)
     } catch {
-      console.log('navigate to sign in')
       navigate('/sign-in')
       return
     }
     try {
       user = storage.getUser()
-      console.log(user)
     } catch {
-      console.log('navigate to not authorized')
       navigate('/not-authorized')
     }
 
@@ -49,7 +40,11 @@ export function UserProvider({ children }: PropsWithChildren) {
   }, [navigate])
 
   if (!value) return null
-  return <UserContext.Provider value={value}>{children}</UserContext.Provider>
+  return (
+    <UserContext.Provider value={value}>
+      <Outlet />
+    </UserContext.Provider>
+  )
 }
 
 export function useUser() {

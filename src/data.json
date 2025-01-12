@@ -1,0 +1,70 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Tech requirements.pdf",
+      "type": "pdf",
+      "status": "Uploaded",
+      "createdAt": "Jan 4, 2024",
+      "createdBy": {
+        "name": "Olivia Rhye",
+        "email": "olivia@gmail.com"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Dashboard Screenshot.jpg",
+      "type": "jpg",
+      "status": "Uploaded",
+      "createdAt": "Jan 4, 2024",
+      "createdBy": {
+        "name": "Oliver Rhye",
+        "email": "oliver@gmail.com"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Dashboard prototype recording.mp4",
+      "type": "mp4",
+      "status": "Uploaded",
+      "createdAt": "Jan 4, 2024",
+      "createdBy": {
+        "name": "Oli Rhye",
+        "email": "oli@gmail.com"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Dashboard prototype final.fig",
+      "type": "figma",
+      "status": "Uploaded",
+      "createdAt": "Jan 4, 2024",
+      "createdBy": {
+        "name": "Lana Steiner",
+        "email": "lana@gmail.com"
+      }
+    },
+    {
+      "id": 5,
+      "name": "UX Design Guidelines.docx",
+      "type": "docx",
+      "status": "Uploaded",
+      "createdAt": "Jan 4, 2024",
+      "createdBy": {
+        "name": "Candice Wu",
+        "email": "candice@gmail.com"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Dashboard Interactions.aep",
+      "type": "aep",
+      "status": "Uploaded",
+      "createdAt": "Jan 4, 2024",
+      "createdBy": {
+        "name": "Natali Craig",
+        "email": "natali@gmail.com"
+      }
+    }
+  ]
+}

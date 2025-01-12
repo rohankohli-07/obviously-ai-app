@@ -19,6 +19,7 @@ export default {
       boxShadow: {
         '3xl': '0px 2px 4px -2px #0A0D120F',
         '4xl': '0px 4px 6px -1px #0A0D121A',
+        modal: '0px 20px 24px -4px #10182808',
       },
       borderRadius: {
         lg: 'var(--radius)',
@@ -87,6 +88,9 @@ export default {
         'obviously-blue': {
           500: '#2C68FF',
           600: '#3882FF',
+        },
+        'obviously-black-alpha': {
+          800: '#101828B1',
         },
       },
     },
